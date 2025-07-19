@@ -1,6 +1,7 @@
 import cn from 'classnames';
 import { ReactNode } from 'react';
 import './App.css';
+import AppContext from './AppContext';
 
 export interface AppProps {
   children?: ReactNode;
@@ -8,5 +9,9 @@ export interface AppProps {
 }
 
 export default function App({ children, theme = 'breeze' }: AppProps) {
-  return <div className={cn('webtk-app', `webtk-theme-${theme}`)}>{children}</div>;
+  return (
+    <AppContext.Provider value={{ theme }}>
+      <div className={cn('webtk-app', `webtk-theme-${theme}`)}>{children}</div>
+    </AppContext.Provider>
+  );
 }
