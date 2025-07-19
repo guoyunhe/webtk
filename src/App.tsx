@@ -11,7 +11,7 @@ export interface AppProps {
 export default function App({ children, theme = 'breeze' }: AppProps) {
   return (
     <AppContext.Provider value={{ theme }}>
-      <div className={cn('webtk-app', `webtk-theme-${theme}`)}>{children}</div>
+      <div className={cn('webtk-app', `webtk-app-theme-${theme}`)}>{children}</div>
     </AppContext.Provider>
   );
 }
