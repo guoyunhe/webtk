@@ -1,8 +1,17 @@
 {
   "name": "webtk",
   "version": "0.0.1",
-  "description": "",
-  "keywords": [],
+  "description": "Web based UI toolkit match native system theme",
+  "keywords": [
+    "linux",
+    "gtk",
+    "qt",
+    "wx-widgets",
+    "kde",
+    "gnome",
+    "xdg",
+    "freedesktop"
+  ],
   "homepage": "https://github.com/guoyunhe/webtk#readme",
   "bugs": {
     "url": "https://github.com/guoyunhe/webtk/issues"
