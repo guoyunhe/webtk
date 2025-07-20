@@ -3,11 +3,13 @@
 Web based UI toolkit match native system theme
 
 ```jsx
-import { App, StatusBar, ToolBar } from 'webtk';
+import { App, StatusBar, ToolBar, Window } from 'webtk';
 
 <App theme="breeze-dark">
-  <ToolBar>TODO</ToolBar>
-  <div>TODO</div>
-  <StatusBar>TODO</StatusBar>
+  <Window>
+    <ToolBar>TODO</ToolBar>
+    <div>TODO</div>
+    <StatusBar>TODO</StatusBar>
+  </Window>
 </App>;
 ```

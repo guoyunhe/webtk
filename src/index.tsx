@@ -6,3 +6,5 @@ export { default as StatusBar } from './StatusBar';
 export type { StatusBarProps } from './StatusBar';
 export { default as ToolBar } from './ToolBar';
 export type { ToolBarProps } from './ToolBar';
+export { default as Window } from './Window';
+export type { WindowProps } from './Window';
