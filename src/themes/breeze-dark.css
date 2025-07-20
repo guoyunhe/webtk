@@ -1,0 +1,16 @@
+.webtk-app-theme-breeze-dark {
+  color: rgb(252, 252, 252);
+  background-color: rgb(32, 35, 38);
+
+  .webtk-tool-bar {
+    background-color: rgb(41, 44, 48);
+    border-bottom: 1px solid rgb(83, 86, 89);
+    padding: 8px;
+  }
+
+  .webtk-status-bar {
+    background-color: rgb(32, 35, 38);
+    border-top: 1px solid rgb(83, 86, 89);
+    padding: 0 8px;
+  }
+}
