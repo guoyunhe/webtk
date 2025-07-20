@@ -1,5 +1,6 @@
 .webtk-app-theme-breeze-dark {
   color: rgb(252, 252, 252);
+  font-size: 10pt;
 
   .webtk-status-bar {
     background-color: rgb(32, 35, 38);
@@ -17,6 +18,63 @@
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     border-radius: 4px;
     overflow: hidden;
+    background-color: rgb(32, 35, 38);
+  }
+
+  .webtk-window-title-bar {
     background-color: rgb(41, 44, 48);
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 28px;
+  }
+
+  .webtk-window-title {
+    text-align: center;
+    flex: 1 1 auto;
+  }
+
+  .webtk-window-actions {
+    display: flex;
+    gap: 8px;
+  }
+
+  .webtk-window-action {
+    width: 16px;
+    height: 16px;
+    border: 0;
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 0;
+    position: relative;
+  }
+
+  .webtk-window-action-close {
+    background-color: rgb(252, 252, 252);
+    color: rgb(41, 44, 48);
+  }
+
+  .webtk-window-action-close:hover {
+    background-color: rgb(218, 68, 83);
+    color: rgb(41, 44, 48);
+  }
+
+  .webtk-window-action-close::before,
+  .webtk-window-action-close::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 12px;
+    background: currentColor;
+    position: absolute;
+    left: 2px;
+    top: 7.5px;
+  }
+  .webtk-window-action-close::before {
+    transform: rotate(45deg);
+  }
+  .webtk-window-action-close::after {
+    transform: rotate(-45deg);
   }
 }

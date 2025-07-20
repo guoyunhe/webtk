@@ -6,7 +6,7 @@ Web based UI toolkit match native system theme
 import { App, StatusBar, ToolBar, Window } from 'webtk';
 
 <App theme="breeze-dark">
-  <Window>
+  <Window title="My App" style={{ maxWidth: 800 }}>
     <ToolBar>TODO</ToolBar>
     <div>TODO</div>
     <StatusBar>TODO</StatusBar>
