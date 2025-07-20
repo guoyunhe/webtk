@@ -48,8 +48,10 @@
     background-color: transparent;
     padding: 0;
     position: relative;
+    color: inherit;
   }
 
+  .webtk-window-action:hover,
   .webtk-window-action-close {
     background-color: rgb(252, 252, 252);
     color: rgb(41, 44, 48);
@@ -76,5 +78,33 @@
   }
   .webtk-window-action-close::after {
     transform: rotate(-45deg);
+  }
+
+  .webtk-window-action-minimize::before {
+    content: '';
+    box-sizing: border-box;
+    display: block;
+    border-right: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 2px;
+    left: 4px;
+    transform: rotate(45deg);
+  }
+
+  .webtk-window-action-maximize::before {
+    content: '';
+    box-sizing: border-box;
+    display: block;
+    border-left: 1px solid currentColor;
+    border-top: 1px solid currentColor;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 6px;
+    left: 4px;
+    transform: rotate(45deg);
   }
 }

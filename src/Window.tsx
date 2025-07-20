@@ -13,6 +13,8 @@ export default function Window({ children, className, icon, title, ...rest }: Wi
 
         <div className="webtk-window-title">{title}</div>
         <div className="webtk-window-actions">
+          <button className="webtk-window-action webtk-window-action-minimize" />
+          <button className="webtk-window-action webtk-window-action-maximize" />
           <button className="webtk-window-action webtk-window-action-close" />
         </div>
       </div>
